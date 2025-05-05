@@ -12,6 +12,11 @@ main {
     background: rgba(255, 255, 255, 0.815);
 }
 
+.logo {
+    color: rgb(113, 227, 113);
+    font-size: 20pt;
+}
+
 header {
     display: inline-block;
     text-align: center;

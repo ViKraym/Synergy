@@ -1,3 +1,35 @@
+body{
+    padding: 0 0;
+    margin: 0 0;
+    background-size: cover ;
+    background-image: url("../assets/images/zayavka.jpg");
+}
+main {
+    text-align: justify;
+    padding: 15px;
+    margin: auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.815);
+}
+
+header {
+    display: inline-block;
+    text-align: center;
+    padding: 0 0;
+    margin: 0 0;
+    width: 100%;
+    background: rgba(54, 54, 54, 0.797);
+}
+
+footer {
+    display: inline-block;
+    /* text-align: center; */
+    padding: 0 0;
+    margin: 0 0;
+    width: 100%;
+    background: rgb(54, 54, 54);
+}
+
 th{
     background: blue;
 }
@@ -11,9 +43,70 @@ h2, p
 
 .zayavka, label, select, input, textarea{
     display: block;
+    
+}
+
+.zayavka, input, textarea, select, fieldset {
+    margin-bottom: 5px;
 }
 
 fieldset input {
     display: inline-block;
 }
 
+.logic-block {
+    padding: 10px 0;
+}
+
+section.form {
+ 
+    padding: 15px;
+    background: white;
+    display: inline-block;
+    border:2px solid red ;
+    margin-left: 25%;
+    width: 40%;
+    height: AUTO;
+}
+
+.hero {
+    font-size: 20pt;
+    text-align: center;
+}
+
+.container, .logo, nav, .header-button{
+    display: inline-block;
+}
+
+.header-button{
+    background: rgb(168, 239, 16);
+    padding: 10px;
+    
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.header-button a{
+    text-decoration: none;
+    color: black;
+    font-size: 14pt;
+}
+
+nav {
+    padding-right: 10px;
+}
+
+
+nav ul li {
+    background: rgb(198, 205, 183);
+    padding: 5px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14pt;
+    
+}

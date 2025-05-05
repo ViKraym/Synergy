@@ -1,0 +1,19 @@
+th{
+    background: blue;
+}
+td{
+    background: rgb(216, 179, 11);
+}
+h2, p
+{
+    margin: 0;
+}
+
+.zayavka, label, select, input, textarea{
+    display: block;
+}
+
+fieldset input {
+    display: inline-block;
+}
+

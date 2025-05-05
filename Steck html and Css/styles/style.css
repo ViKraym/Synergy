@@ -11,6 +11,15 @@ main {
     width: 80%;
     background: rgba(255, 255, 255, 0.815);
 }
+p{
+    line-height: 140%;
+}
+
+#vac ul li{
+    list-style: circle;
+    font-size: 1.6rem;
+}
+
 
 .logo {
     color: rgb(113, 227, 113);

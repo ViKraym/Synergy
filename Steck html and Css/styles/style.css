@@ -1,29 +1,36 @@
+
+/* -----------------------------------to all site----------------------------------- */
+
+* {
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color: white;
+}
+
 body{
     padding: 0 0;
     margin: 0 0;
-    background-size: cover ;
-    background-image: url("../assets/images/zayavka.jpg");
+    background: #2A7B9B;
+    background: -webkit-linear-gradient(to right, rgb(19, 57, 71) 0%, rgb(26, 58, 40) 50%, rgb(22, 53, 39) 100%);
+    background: linear-gradient(to right, rgb(19, 57, 71) 0%, rgb(26, 58, 40) 50%, rgb(22, 53, 39) 100%);
 }
+
+h2 {
+    color: rgb(229 , 14, 114);
+    font-size: 40pt;
+    font-weight: 800;
+}
+
+/* -----------------------------------main block----------------------------------- */
+
 main {
     text-align: justify;
     padding: 15px;
     margin: auto;
     width: 80%;
-    background: rgba(255, 255, 255, 0.815);
-}
-p{
-    line-height: 140%;
-}
-
-#vac ul li{
-    list-style: circle;
-    font-size: 1.6rem;
-}
-
-
-.logo {
-    color: rgb(113, 227, 113);
-    font-size: 20pt;
+   
 }
 
 header {
@@ -44,49 +51,8 @@ footer {
     background: rgb(54, 54, 54);
 }
 
-th{
-    background: blue;
-}
-td{
-    background: rgb(216, 179, 11);
-}
-h2, p
-{
-    margin: 0;
-}
-
-.zayavka, label, select, input, textarea{
-    display: block;
-    
-}
-
-.zayavka, input, textarea, select, fieldset {
-    margin-bottom: 5px;
-    font-size: 14pt;
-}
-
-fieldset input {
-    display: inline-block;
-}
-
 .logic-block {
     padding: 10px 0;
-}
-
-section.form {
- 
-    padding: 15px;
-    background: white;
-    display: inline-block;
-    border:2px solid red ;
-    margin-left: 25%;
-    width: 40%;
-    height: AUTO;
-}
-
-.hero {
-    font-size: 20pt;
-    text-align: center;
 }
 
 .container, .logo, nav, .header-button{
@@ -107,6 +73,9 @@ section.form {
     font-size: 14pt;
 }
 
+
+/* -----------------------------------menu----------------------------------- */
+
 nav {
     padding-right: 10px;
 }
@@ -124,4 +93,132 @@ nav ul li a {
     color: black;
     font-size: 14pt;
     
+}
+
+
+
+/* -----------------------------------block----------------------------------- */
+
+
+
+
+p{
+    line-height: 140%;
+}
+
+.logo {
+    color: rgb(113, 227, 113);
+    font-size: 20pt;
+}
+
+
+h2, p
+{
+    margin: 0;
+}
+
+/* -----------------------------------block to form----------------------------------- */
+
+
+.zayavka, label, select, input, textarea{
+    display: block;
+    
+}
+
+.zayavka, input, textarea, select, fieldset {
+    margin-bottom: 5px;
+    font-size: 14pt;
+}
+
+fieldset input {
+    display: inline-block;
+}
+
+
+section.form {
+ 
+    padding: 15px;
+   
+    display: inline-block;
+    
+    /* margin-left: 25%; */
+    width: 40%;
+    height: AUTO;
+}
+
+
+
+
+/* -----------------------------------section one hero and main_titel----------------------------------- */
+
+.hero {
+    width: 40vw;
+    font-size: 20pt;
+    text-align: left;
+}
+
+
+.main_titel strong {
+
+    font-weight: 400;
+    color: rgb(229 , 14, 114);
+}
+
+.main_titel {
+    font-size: 50pt;
+    font-weight: 800;
+    line-height: 100%;
+}
+
+/* -----------------------------------section two Вакансии----------------------------------- */
+
+#vac{
+    width: 45vw;
+}
+
+#vac ul{
+  padding: 0;
+}
+
+
+#vac ul li{
+    border-radius: 40px;
+    padding: 20px 30px;
+    margin: 0 10px 10px 0;
+    background: rgb(23, 203, 235);
+    display: inline-block;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+/* -----------------------------------style table----------------------------------- */
+
+/* th{
+    background: blue;
+}
+td{
+    background: rgb(216, 179, 11);
+} */
+
+.big_table {
+    text-align: center;
+}
+
+.big_table td{
+    padding: 15px;
+    text-align: center;
+}
+
+.big_table tr:nth-child(2n){
+    background: rgb(62, 127, 202);
+}
+
+.big_table tr:nth-child(2n) td:last-child{
+    border-radius: 0 30px 30px 0;
+    
+}
+
+.big_table tr:nth-child(2n) td{
+ 
+    border-bottom: 2px solid white;
 }

@@ -72,9 +72,7 @@ header{
                 justify-content: space-around;
                 word-wrap: wrap;
                 font-family: "Helvetica neue", sans-serif;
-                font-size: 13px;
-               
-                    
+                font-size: 13px;       
             }
             
             
@@ -186,7 +184,34 @@ main{
     position: absolute;
 }
 
-        
+
+
+
+.etaps {
+    text-align: center;
+}
+
+.logo_etaps .slogan{
+    display: flex;
+    justify-content: space-around;
+    word-wrap: wrap;
+    font-family: "Helvetica neue", sans-serif;
+    font-size: 56px;
+    font-weight: 800; 
+      
+}
+
+.logo_etaps .slogan strong{
+    font-size: 46px;
+    font-weight: 550; 
+    font-family: "Helvetica neue", sans-serif;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);  
+      
+}
+
+
 
 
 

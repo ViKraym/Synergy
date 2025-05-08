@@ -1,10 +1,9 @@
-
 /* -----------------------------------to all site----------------------------------- */
 
 * {
     font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+ 
   font-style: normal;
   color: white;
 }
@@ -33,88 +32,127 @@ main {
    
 }
 
-header {
-    display: inline-block;
-    text-align: center;
+header { 
     padding: 0 0;
     margin: 0 0;
     width: 100%;
+   
     background: rgba(54, 54, 54, 0.797);
+    position: fixed;
+    z-index: 0;
 }
 
+
+        .row{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            padding: 10px;
+        }
+
+        .nav_list{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .nav_list li{
+            background: rgb(198, 205, 183);
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            border-radius: 5px;
+           
+        }
+        
+        nav {
+            padding-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 14pt;
+            
+        } 
+
+
+
+        .header-button{
+            background: rgb(168, 239, 16);
+            padding: 15px;
+            display: inline-block;
+            border-radius: 5px;
+            
+
+        }
+
+        .header-button a{
+            text-decoration: none;
+            color: black;
+            font-size: 14pt;
+            
+        }
+
+
 footer {
-    display: inline-block;
-    /* text-align: center; */
+   
     padding: 0 0;
     margin: 0 0;
     width: 100%;
     background: rgb(54, 54, 54);
+    
 }
+
+        footer .row {
+
+            display: flex;
+            justify-content: space-around;
+            
+            height: 100%;
+            
+            padding: 10px;
+
+        }
+
+        footer .footer_text {
+            justify-content: space-around;
+            flex-basis: 40vw;
+            font-size: .7rem;
+
+        }
+
+
 
 .logic-block {
     padding: 10px 0;
 }
 
-.container, .logo, nav, .header-button{
+/* .container, .logo, nav{
     display: inline-block;
-}
+} */
 
-.header-button{
-    background: rgb(168, 239, 16);
-    padding: 10px;
-    
-    display: inline-block;
-    border-radius: 5px;
-}
 
-.header-button a{
-    text-decoration: none;
-    color: black;
-    font-size: 14pt;
-}
 
 
 /* -----------------------------------menu----------------------------------- */
 
-nav {
-    padding-right: 10px;
-}
-
-
-nav ul li {
-    background: rgb(198, 205, 183);
-    padding: 5px;
-    display: inline-block;
-    border-radius: 5px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 14pt;
-    
-}
 
 
 
 /* -----------------------------------block----------------------------------- */
-
-
-
-
-p{
+p {
     line-height: 140%;
 }
 
-.logo {
-    color: rgb(113, 227, 113);
-    font-size: 20pt;
+h2, p {
+    margin: 0;
 }
 
-
-h2, p
-{
-    margin: 0;
+h1 {
+        padding: 150px 0;
 }
 
 /* -----------------------------------block to form----------------------------------- */
@@ -149,13 +187,26 @@ section.form {
 
 
 
-/* -----------------------------------section one hero and main_titel----------------------------------- */
+/* -----------------------------------section hero and main_titel----------------------------------- */
 
 .hero {
     width: 40vw;
     font-size: 20pt;
     text-align: left;
 }
+
+.logo {
+    color: rgb(113, 227, 113);
+    font-size: 20pt;
+}
+
+#hero_figure{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
 
 
 .main_titel strong {
@@ -170,7 +221,7 @@ section.form {
     line-height: 100%;
 }
 
-/* -----------------------------------section two Вакансии----------------------------------- */
+/* -----------------------------------section Вакансии----------------------------------- */
 
 #vac{
     width: 45vw;
@@ -185,20 +236,38 @@ section.form {
     border-radius: 40px;
     padding: 20px 30px;
     margin: 0 10px 10px 0;
-    background: rgb(23, 203, 235);
+    background: rgb(22, 188, 218);
     display: inline-block;
     list-style: none;
     font-size: 1.6rem;
 }
 
-/* -----------------------------------style table----------------------------------- */
 
-/* th{
-    background: blue;
+#vac ul li:nth-child(2n){
+    border-radius: 40px;
+    padding: 20px 30px;
+    margin: 0 10px 10px 0;
+    background: rgb(226, 226, 226);
+    color: black;
+    display: inline-block;
+    list-style: none;
+    font-size: 1.6rem;
 }
-td{
-    background: rgb(216, 179, 11);
-} */
+
+
+.vac_list{
+    flex-direction: row;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+
+}
+
+#ferst{
+    order: -1;
+}
+
+/* -----------------------------------style table----------------------------------- */
 
 .big_table {
     text-align: center;
@@ -221,4 +290,53 @@ td{
 .big_table tr:nth-child(2n) td{
  
     border-bottom: 2px solid white;
+}
+
+.big_table thead th:not(.pusto){
+    padding: 15px;
+    text-align: center;
+    background: rgba(22, 73, 28, 0.623);
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    border-radius:  30px 30px 0 0 ;
+}
+
+
+
+
+
+/* -----------------------------------adaptive block----------------------------------- */
+@media screen and (max-width: 1280px) {
+    
+    #vac{
+        width: 100%;
+    }
+
+    h1{
+        padding: 10px 50px;
+    }
+
+    #hero_figure{
+        position: static;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+   
+    main {
+        text-align: justify;
+        padding: 15px;
+        margin: auto;
+        width: 90%;
+       
+    }
+
+
 }

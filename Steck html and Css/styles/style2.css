@@ -1,0 +1,392 @@
+/* -----------------------------------to all site----------------------------------- */
+
+* {
+    font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+ 
+  font-style: normal;
+  color: white;
+}
+
+body{
+    padding: 0 0;
+    margin: 0 0;
+    background: #2A7B9B;
+    background: linear-gradient(to right, rgb(19, 57, 71) 0%, rgb(26, 58, 40) 50%, rgb(22, 53, 39) 100%);
+}
+
+h2 {
+    color: rgb(229 , 14, 114);
+    font-size: 40pt;
+    font-weight: 800;
+}
+
+/* -----------------------------------main block----------------------------------- */
+
+main {
+    text-align: justify;
+    padding: 15px;
+    margin: auto;
+    width: 80%;
+   
+}
+
+header { 
+    padding: 0 0;
+    margin: 0 0;
+    width: 100%;
+   
+    background: rgba(54, 54, 54, 0.797);
+    position: fixed;
+    z-index: 0;
+}
+
+
+        .row{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            padding: 10px;
+        }
+
+        .nav_list{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .nav_list li{
+            background: rgb(198, 205, 183);
+            padding: 10px;
+            margin: 10px;
+            display: inline-block;
+            border-radius: 5px;
+           
+        }
+        
+        nav {
+            padding-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 14pt;
+            
+        } 
+
+
+
+        .header-button{
+            background: rgb(168, 239, 16);
+            padding: 15px;
+            display: inline-block;
+            border-radius: 5px;
+            
+
+        }
+
+        .header-button a{
+            text-decoration: none;
+            color: black;
+            font-size: 14pt;
+            
+        }
+
+
+footer {
+   
+    padding: 0 0;
+    margin: 0 0;
+    width: 100%;
+    background: rgb(54, 54, 54);
+    
+}
+
+        footer .row {
+            display: flex;
+            justify-content: space-fig;
+            height: 100%;
+            padding: 10px;
+
+        }
+
+        footer .footer_text {
+            justify-content: space-around;
+            flex-basis: 40vw;
+            font-size: .7rem;
+
+        }
+
+
+
+.logic-block {
+    padding: 10px 0;
+}
+
+/* .container, .logo, nav{
+    display: inline-block;
+} */
+
+
+
+
+/* -----------------------------------menu----------------------------------- */
+
+
+
+
+/* -----------------------------------block----------------------------------- */
+p {
+    line-height: 140%;
+}
+
+h2, p {
+    margin: 0;
+}
+
+h1 {
+        padding: 150px 0;
+}
+
+/* -----------------------------------block to form----------------------------------- */
+
+
+.zayavka, label, select, input, textarea{
+    display: block;
+    
+}
+
+.zayavka, input, textarea, select, fieldset {
+    margin-bottom: 5px;
+    font-size: 14pt;
+}
+
+fieldset input {
+    display: inline-block;
+}
+
+
+section.form {
+ 
+    padding: 15px;
+   
+    display: inline-block;
+    
+    /* margin-left: 25%; */
+    width: 40%;
+    height: AUTO;
+}
+
+
+
+
+/* -----------------------------------section hero and main_titel----------------------------------- */
+
+.hero {
+    width: 40vw;
+    font-size: 20pt;
+    text-align: left;
+}
+
+.logo {
+    color: rgb(113, 227, 113);
+    font-size: 20pt;
+}
+
+#hero_figure{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
+
+.main_titel strong {
+
+    font-weight: 400;
+    color: rgb(229 , 14, 114);
+}
+
+.main_titel {
+    font-size: 50pt;
+    font-weight: 800;
+    line-height: 100%;
+}
+
+/* -----------------------------------section Вакансии----------------------------------- */
+
+#vac{
+    width: 45vw;
+}
+
+#vac ul{
+  padding: 0;
+}
+
+
+#vac ul li{
+    border-radius: 40px;
+    padding: 20px 30px;
+    margin: 0 10px 10px 0;
+    background: rgb(22, 188, 218);
+    display: inline-block;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+
+#vac ul li:nth-child(2n){
+    border-radius: 40px;
+    padding: 20px 30px;
+    margin: 0 10px 10px 0;
+    background: rgb(226, 226, 226);
+    color: black;
+    display: inline-block;
+    list-style: none;
+    font-size: 1.6rem;
+}
+
+
+.vac_list{
+    flex-direction: row;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+
+}
+
+#ferst{
+    order: -1;
+}
+
+/* -----------------------------------style table----------------------------------- */
+
+.big_table {
+    text-align: center;
+}
+
+.big_table td{
+    padding: 15px;
+    text-align: center;
+}
+
+.big_table tr:nth-child(2n){
+    background: rgb(62, 127, 202);
+}
+
+.big_table tr:nth-child(2n) td:last-child{
+    border-radius: 0 30px 30px 0;
+    
+}
+
+.big_table tr:nth-child(2n) td{
+ 
+    border-bottom: 2px solid white;
+}
+
+.big_table thead th:not(.pusto){
+    padding: 15px;
+    text-align: center;
+    background: rgba(22, 73, 28, 0.623);
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-left: 2px solid white;
+    border-radius:  30px 30px 0 0 ;
+}
+
+
+
+
+.vac_list{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-auto-rows: 100px 100px;
+}
+
+
+
+
+.gallery .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    grid-column-gap:10px; 
+    grid-row-gap:10px; 
+    box-shadow: 10px red; 
+    
+}
+
+.gallery-box {
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px red;
+    }
+
+.gallery-box img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    
+}
+
+.box1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box2 {
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+.box3 {
+    grid-column-start: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+
+
+
+
+/* -----------------------------------adaptive block----------------------------------- */
+@media screen and (max-width: 1280px) {
+    
+    #vac{
+        width: 100%;
+    }
+
+    h1{
+        padding: 10px 50px;
+    }
+
+    #hero_figure{
+        position: static;
+        right: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+   
+    main {
+        text-align: justify;
+        padding: 15px;
+        margin: auto;
+        width: 90%;
+       
+    }
+
+
+}

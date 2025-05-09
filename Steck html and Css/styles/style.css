@@ -11,8 +11,8 @@
 
 body{
         width: 100%;
-    background: rgb(209, 210, 210);
-    background: radial-gradient(circle,rgba(5, 9, 71, 1) 0%, rgba(64, 45, 102, 1) 50%, rgba(108, 16, 120, 1) 100%);
+    background: rgb(33, 33, 33);
+    /* background: radial-gradient(circle,rgba(5, 9, 71, 1) 0%, rgba(64, 45, 102, 1) 50%, rgba(108, 16, 120, 1) 100%); */
 }
 
 a, a:visited {
@@ -190,6 +190,7 @@ main{
 
 
 .etaps {
+    margin-top: 10%;
     display: flex;
     width: 100%;
     text-align: center;
@@ -312,7 +313,7 @@ main{
 
 
 .test_flex{
-    
+   
     padding-top: 10%;
     width: 100%;
     display: flex;
@@ -320,11 +321,21 @@ main{
     justify-content: center;
     align-items: center;
 
-    background-image: url(../assets/images/hero_bg.png);
-    background-size: cover;
-
+    /* background-image: url(../assets/images/hero_bg.png);
+    background-size: contain; */
+    
 
 }
+.test_flex img.test_bg{
+    width: 100% ;
+    height: 100%;
+    /* object-fit: cover; */
+    position: absolute;
+    z-index: -1;
+    /* visibility: hidden; */
+}
+
+
 
 .test_titel{
     width: 40%;

@@ -10,6 +10,7 @@
 }
 
 body{
+        width: 100%;
     background: rgb(209, 210, 210);
     background: radial-gradient(circle,rgba(5, 9, 71, 1) 0%, rgba(64, 45, 102, 1) 50%, rgba(108, 16, 120, 1) 100%);
 }
@@ -22,7 +23,7 @@ header{
     position: absolute;
     padding: 0 0;
     margin: 0 0;
-    width: 100vw;
+    width: 100%;
     backdrop-filter: blur(13px);
     background: rgba(0, 0, 0, .6);
     position: fixed;
@@ -310,3 +311,109 @@ main{
 
 
 
+.test_flex{
+    
+    padding-top: 10%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(../assets/images/hero_bg.png);
+    background-size: cover;
+
+
+}
+
+.test_titel{
+    width: 40%;
+    display: block;
+    
+}
+
+.test_img{
+    width: 30%;
+}
+
+.test_img img{
+    width: 100%;
+}
+
+.test_titel p{
+    margin-top: 30px;
+}
+
+.test_titel h1.test_h1_titel{
+    width: 80%;
+    font-family: "Helvetica neue", sans-serif;
+    font-size: 76px;
+    /* margin-bottom: 5px; */
+}
+
+.test_titel .test_subtitel{
+    width: 55%;
+    font-family: "Helvetica neue", sans-serif;
+    font-size: 16px;
+    /* margin-bottom: 5px; */
+}
+
+.test_titel p.test_button{
+    margin-top: 100px;
+    font-family: "Helvetica neue";
+
+    display: inline-block;
+    width: 250px;
+    background: linear-gradient(265deg ,rgba(161, 69, 189, 0.8)-1.44%, rgba(55, 0,-89, 0.8)77.83%), #000000;
+    text-align: center;
+
+    line-height: 300%;
+    font-weight: 500;
+}
+
+
+@media screen and (min-width:350px) and (max-width: 980px) {
+    .test_flex{
+    display: block;  
+    }
+
+
+.test_titel{
+   
+        padding-top: 110px;
+        width: 100%;
+        display: block;
+    }
+
+
+.test_titel h1.test_h1_titel{
+    text-align: left;
+    width: 55%;
+    font-size: 26px;
+    /* margin-bottom: 5px; */
+}
+
+.test_titel .test_subtitel{
+    width: 75%;
+    font-size: 16px;
+  
+}
+
+.test_img {
+    margin-left: 185px;
+    width: 50%;
+    margin-right: 0;
+}
+
+.test_titel p.test_button{
+    margin-top: 40px;
+    
+}
+
+
+.test_titel p{
+    margin-top: 10px;
+}
+
+
+}

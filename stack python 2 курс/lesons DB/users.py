@@ -1,4 +1,4 @@
-from orm.base_table import BaseTable
+from base_table import BaseTable
 from sqlalchemy import text
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy.types import *
@@ -14,4 +14,4 @@ class Users(BaseTable):
     Name: Mapped[str]
     Age: Mapped[int]
     CreatedOn: Mapped[datetime.datetime] = mapped_column(server_default=text('CURRENT_TIMESTEMP'))
-    UpdatedAr: Mapped[datetime.datetime] = mapped_column(server_default=text('CURRENT_TIMESTEMP'), onupdate = datatime.datatime.now())
+    UpdatedAr: Mapped[datetime.datetime] = mapped_column(server_default=text('CURRENT_TIMESTEMP'), onupdate = datetime.datetime.now())

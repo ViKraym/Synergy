@@ -1,7 +1,7 @@
-from orm.connection import Connection
-from orm.session_builder import SessionBuilder
-from orm.base_table import BaseTable
-from orm.tables.users import Users
+from connection import Connection
+from session_builder import SessionBuilder
+from base_table import BaseTable
+from users import Users
 
 session = SessionBuilder(
     Connection(
@@ -10,7 +10,7 @@ session = SessionBuilder(
         user='postgres',
         password='password',
         dbname='synergy',
-        sql_type='Postgresql'
+        sql_type='PostgresSQL'
     )
 )
 

@@ -3,7 +3,7 @@ from sqlalchemy.orm import DeclarativeBase
 from typing import Annotated
 from sqlalchemy.orm import Mapper, mapped_column
 
-from sqlalchemy.inspection import inspection
+from sqlalchemy import inspection
 
 
 
